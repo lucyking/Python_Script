@@ -37,6 +37,7 @@ for item in os.listdir(current_dir):
     print item
     if os.path.splitext(item)[1] == '.png' or os.path.splitext(item)[1] == '.gif':
         print '[png/gif]:',item
+        os.path.join(current_dir,item)
 
     # print os.path.abspath(item)
     # print current_dir+'\\'+item
