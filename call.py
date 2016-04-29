@@ -25,9 +25,11 @@ if s3:
 # if __name__ == '__main__':
 
 current_dir = os.path.abspath('.')
-shutil.rmtree('test')
+if os.path.isdir('test'):
+	shutil.rmtree('test')
 os.mkdir('test')
 my_dir =  os.path.join(current_dir,'test')
+my_dir =  os.path.join(my_dir,'test.txt')
 print '[>>>]my dir',my_dir
 shutil.rmtree('test')
 
