@@ -30,3 +30,13 @@ os.mkdir('test')
 my_dir =  os.path.join(current_dir,'test')
 print '[>>>]my dir',my_dir
 shutil.rmtree('test')
+
+for item in os.listdir(current_dir):
+    if os.path.splitext(item)[1] == '.png' or os.path.splitext(item)[1] =='.gif':
+        print item
+
+        # print os.path.abspath(item)
+        # print current_dir+'\\'+item
+        # print current_dir+'\\'+current_test+'\\'+item
+        # shutil.move(current_output_dir+'\\'+item,current_output_dir+'\\'+name+'\\'+item)
+print '----------------------------------------------'
