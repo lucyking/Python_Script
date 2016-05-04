@@ -1,4 +1,4 @@
-from  main import MB, B
+from main import MB, B,Alpha
 import re
 import os
 import shutil
@@ -44,3 +44,21 @@ for item in os.listdir(current_dir):
     # print current_dir+'\\'+current_test+'\\'+item
     # shutil.move(current_output_dir+'\\'+item,current_output_dir+'\\'+name+'\\'+item)
 print '----------------------------------------------'
+
+
+a1 = Alpha()
+a1.increase()
+a1.increase()
+a1.increase()
+a2 = Alpha()
+print a2.var
+a2.increase()
+print dir(a1)
+print getattr(a1, 'increase')
+print getattr(a2, 'increase')
+print getattr(Alpha, 'increase')
+print a1.__dict__
+print Alpha.__dict__
+
+
+
